@@ -30,8 +30,34 @@
   display: none
 }
 
+.h-64 {
+  height: 16rem
+}
+
+.w-full {
+  width: 100%
+}
+
 .border {
   border-width: 1px
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem
+}
+
+.pb-0 {
+  padding-bottom: 0px
+}
+
+.pt-5 {
+  padding-top: 1.25rem
 }
 
 .uppercase {

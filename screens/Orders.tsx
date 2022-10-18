@@ -7,7 +7,7 @@ const Orders = () => {
   const tw = useTailwind();
   return (
     <SafeAreaView>
-      <Text style={tw("text-blue-500")}>Orders</Text>
+      <Text style={tw("text-red-500")}>Orders</Text>
     </SafeAreaView>
   );
 };
