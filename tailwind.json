@@ -1,4 +1,9 @@
 {
+	"static": {
+		"style": {
+			"position": "static"
+		}
+	},
 	"fixed": {
 		"style": {
 			"position": "fixed"
