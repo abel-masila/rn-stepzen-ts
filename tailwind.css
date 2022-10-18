@@ -1,9 +1,41 @@
+.fixed {
+  position: fixed
+}
+
+.absolute {
+  position: absolute
+}
+
+.relative {
+  position: relative
+}
+
+.block {
+  display: block
+}
+
+.inline {
+  display: inline
+}
+
 .flex {
   display: flex
 }
 
 .hidden {
   display: none
+}
+
+.border {
+  border-width: 1px
+}
+
+.uppercase {
+  text-transform: uppercase
+}
+
+.capitalize {
+  text-transform: capitalize
 }
 
 .text-red-500 {
