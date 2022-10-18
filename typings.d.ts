@@ -33,3 +33,7 @@ type Order = {
 type OrderResponse = {
   value: Order;
 };
+type CustomerResponse = {
+  name: string;
+  value: Customer;
+};
