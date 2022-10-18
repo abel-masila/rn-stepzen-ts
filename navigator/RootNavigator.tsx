@@ -1,4 +1,3 @@
-import { View, Text } from "react-native";
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -10,7 +9,7 @@ export type RootStackParamList = {
   Order: { order: any };
 };
 
-const RootStack = createNativeStackNavigator();
+const RootStack = createNativeStackNavigator<RootStackParamList>();
 
 const RootNavigator = () => {
   return (
