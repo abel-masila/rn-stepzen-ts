@@ -1,0 +1,27 @@
+type Items {
+  item_id: Int
+  name: String
+  price: Float
+  quantity: Int
+}
+type TrackingItems {
+  customer_id: String
+  items: [Items]
+}
+
+type TrackingItemList {
+  name: ID
+  value: TrackingItems
+}
+
+type Query {
+  getTrackingItemById(id: ID!): TrackingItems
+    @rest(
+      endpoint: "https://rn-stepzen-default-rtdb.firebaseio.com/trackingItems/$id.json"
+    )
+  getTrackingItems: [TrackingItemList]
+    @rest(
+      endpoint: "https://rn-stepzen-default-rtdb.firebaseio.com/trackingItems.json"
+      transforms: [{ pathpattern: [], editor: "objectToArray" }]
+    )
+}
