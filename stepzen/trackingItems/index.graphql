@@ -7,7 +7,7 @@ type Items {
 type TrackingItems {
   customer_id: String
   items: [Items]
-  Customer: Customer
+  customer: Customer
     @materializer(
       query: "getCustomerById"
       arguments: [{ name: "id", field: "customer_id" }]
