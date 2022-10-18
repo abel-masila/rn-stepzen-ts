@@ -23,4 +23,9 @@ type Query {
       endpoint: "https://rn-stepzen-default-rtdb.firebaseio.com/orders.json"
       transforms: [{ pathpattern: [], editor: "objectToArray" }]
     )
+
+  getOrdersById(id: ID): Order
+    @rest(
+      endpoint: "https://rn-stepzen-default-rtdb.firebaseio.com/orders/$id.json"
+    )
 }

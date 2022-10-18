@@ -1,0 +1,19 @@
+type Customer {
+  email: String
+  name: String
+}
+type CustomerList {
+  name: ID
+  value: Customer
+}
+type Query {
+  getCustomers: [CustomerList]
+    @rest(
+      endpoint: "https://rn-stepzen-default-rtdb.firebaseio.com/customers.json"
+      transforms: [{ pathpattern: [], editor: "objectToArray" }]
+    )
+  getCustomerById(id: ID!): Customer
+    @rest(
+      endpoint: "https://rn-stepzen-default-rtdb.firebaseio.com/customers/$id.json"
+    )
+}
