@@ -18,7 +18,11 @@ const CustomerCard = ({ userId, name, email }: Props) => {
 
   const tw = useTailwind();
   return (
-    <TouchableOpacity>
+    <TouchableOpacity
+      onPress={() =>
+        navigation.navigate("MyModal", { userId: userId, name: name })
+      }
+    >
       <Card containerStyle={tw("p-5 rounded-lg")}>
         <View>
           <View style={tw("flex-row justify-between")}>
