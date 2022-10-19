@@ -15,7 +15,7 @@ import useOrders from "../hooks/useOrders";
 import { Button, Image } from "@rneui/themed";
 import OrderCard from "../components/OrderCard";
 
-type OrderRouteProp = RouteProp<RootStackParamList, "Order">;
+//type OrderRouteProp = RouteProp<RootStackParamList, "Order">;
 
 export type OrderScreenProp = CompositeNavigationProp<
   BottomTabNavigationProp<TabStackParamList, "Orders">,
